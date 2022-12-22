@@ -1,0 +1,17 @@
+<p id="result">Ваш результат: </p>
+<% if @k == -1%>
+<p> <%= @res_x%> </p>
+<% else %>
+<table>
+  <tr>
+    <td>Число</td><td>Квадрат числа</td>
+  </tr>
+  <% @res_x.each do |x| %>
+    <tr>
+      <td><%= x %></td>
+      <td><%= x**2 %></td>
+    </tr>
+  <% end %>
+</table>
+<p>Всего чисел: <%= @k %> </p>
+<% end %>

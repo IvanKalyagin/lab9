@@ -1,0 +1,8 @@
+<h1>Lab9#input</h1>
+<p>Find me in app/views/lab9/input.html.erb</p>
+<%= form_with url: view_path do |form| %>
+ <%= form.label("Input n:") %>
+ <%= form.text_field(:n_s) %> <br/>
+ <br/><%= form.submit("Enter") %>
+<% end %> 
+<div id='view-container'></div>
